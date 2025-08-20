@@ -1,304 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-19T20:18:26.506571" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-20T15:40:43.435247" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Simula Credito Cpf" source="c:\Users\danie\Desktop\Plataforma_Sicred\resources\testes\simula_credito\test_simula_credito_cpf.robot">
 <test id="s1-t1" name="Preenchimento de cadastro para simulacao de credito via cpf utilizando tabela Fipe" line="8">
 <kw name="Dado que eu acesse a Sicred Plataforma Parceiro" owner="setup_teardown">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:26.976778" level="INFO">Opening browser 'Chrome' to base url 'https://plataforma.dev.sicredipioneira.com.br/parceiro'.</msg>
+<msg time="2025-08-20T15:40:43.906481" level="INFO">Opening browser 'Chrome' to base url 'https://plataforma.dev.sicredipioneira.com.br/parceiro'.</msg>
 <arg>https://plataforma.dev.sicredipioneira.com.br/parceiro</arg>
 <arg>browser=Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-08-19T20:18:26.976475" elapsed="3.069412"/>
+<status status="PASS" start="2025-08-20T15:40:43.906189" elapsed="3.376122"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.046895" elapsed="0.035637"/>
+<status status="PASS" start="2025-08-20T15:40:47.283277" elapsed="0.028762"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:30.083719" level="INFO">Executing JavaScript:
+<msg time="2025-08-20T15:40:47.313081" level="INFO">Executing JavaScript:
 window.resizeTo(window.innerWidth * 0.1, window.innerHeight * 0.1)
 Without any arguments.</msg>
 <arg>window.resizeTo(window.innerWidth * 0.1, window.innerHeight * 0.1)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.083069" elapsed="0.007199"/>
+<status status="PASS" start="2025-08-20T15:40:47.312417" elapsed="0.006226"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:30.091002" level="INFO">Executing JavaScript:
+<msg time="2025-08-20T15:40:47.319600" level="INFO">Executing JavaScript:
 window.localStorage.clear();
 Without any arguments.</msg>
 <arg>window.localStorage.clear();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.090579" elapsed="0.005192"/>
+<status status="PASS" start="2025-08-20T15:40:47.319056" elapsed="0.005470"/>
 </kw>
 <kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:30.096488" level="INFO">Executing JavaScript:
+<msg time="2025-08-20T15:40:47.325341" level="INFO">Executing JavaScript:
 window.sessionStorage.clear();
 Without any arguments.</msg>
 <arg>window.sessionStorage.clear();</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.096081" elapsed="0.004841"/>
+<status status="PASS" start="2025-08-20T15:40:47.324868" elapsed="0.006061"/>
 </kw>
-<status status="PASS" start="2025-08-19T20:18:26.975856" elapsed="3.125320"/>
+<status status="PASS" start="2025-08-20T15:40:43.905438" elapsed="3.425746"/>
 </kw>
 <kw name="Quando faco login com informacoes validas" owner="login_sicred_plataforma">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:30.102590" level="INFO">Typing text 'admin4' into text field 'xpath=//input[@placeholder='E-mail']'.</msg>
+<msg time="2025-08-20T15:40:47.332536" level="INFO">Typing text 'admin4' into text field 'xpath=//input[@placeholder='E-mail']'.</msg>
 <arg>${CAMPO_USUARIO}</arg>
 <arg>admin4</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.102149" elapsed="0.090928"/>
+<status status="PASS" start="2025-08-20T15:40:47.332111" elapsed="0.102766"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:30.193687" level="INFO">Typing text 'sicredi@' into text field 'xpath=//input[@placeholder='Senha']'.</msg>
+<msg time="2025-08-20T15:40:47.435556" level="INFO">Typing text 'sicredi@' into text field 'xpath=//input[@placeholder='Senha']'.</msg>
 <arg>${CAMPO_SENHA}</arg>
 <arg>sicredi@</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.193389" elapsed="0.069374"/>
+<status status="PASS" start="2025-08-20T15:40:47.435224" elapsed="0.079063"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:35.264060" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-08-20T15:40:52.515627" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:30.263049" elapsed="5.001456"/>
+<status status="PASS" start="2025-08-20T15:40:47.514599" elapsed="5.001583"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:35.265127" level="INFO">Clicking element 'xpath=//span[contains(.,' Entrar ')]'.</msg>
+<msg time="2025-08-20T15:40:52.516909" level="INFO">Clicking element 'xpath=//span[contains(.,' Entrar ')]'.</msg>
 <arg>${BOTAO_ENTRAR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:35.264758" elapsed="0.047171"/>
+<status status="PASS" start="2025-08-20T15:40:52.516623" elapsed="0.050340"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:35.747810" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_sicred_plataforma.png"&gt;&lt;img src="login_sicred_plataforma.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-08-20T15:40:53.008583" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="login_sicred_plataforma.png"&gt;&lt;img src="login_sicred_plataforma.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>login_sicred_plataforma.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-08-19T20:18:35.312287" elapsed="0.435968"/>
+<status status="PASS" start="2025-08-20T15:40:52.567364" elapsed="0.441593"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:45.749523" level="INFO">Slept 10 seconds.</msg>
+<msg time="2025-08-20T15:41:03.009839" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:35.748636" elapsed="10.001177"/>
+<status status="PASS" start="2025-08-20T15:40:53.009315" elapsed="10.001091"/>
 </kw>
-<status status="PASS" start="2025-08-19T20:18:30.101732" elapsed="15.648226"/>
+<status status="PASS" start="2025-08-20T15:40:47.331737" elapsed="15.678978"/>
 </kw>
 <kw name="E crio uma nova simulacao de credito para um cliente cpf" owner="simula_credito_cpf">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:45.751238" level="INFO">Clicking element '//span[contains(.,' NOVA SIMULAÇÃO ')]'.</msg>
+<msg time="2025-08-20T15:41:03.012791" level="INFO">Clicking element '//span[contains(.,' NOVA SIMULAÇÃO ')]'.</msg>
 <arg>${BOTAO_NOVA_SIMULACAO}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:45.750902" elapsed="0.044296"/>
+<status status="PASS" start="2025-08-20T15:41:03.012412" elapsed="0.046379"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:46.796279" level="INFO">Slept 1 second.</msg>
+<msg time="2025-08-20T15:41:04.059693" level="INFO">Slept 1 second.</msg>
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:45.795570" elapsed="1.001059"/>
+<status status="PASS" start="2025-08-20T15:41:03.059080" elapsed="1.001106"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:46.797382" level="INFO">Typing text '19362729032' into text field '//input[@type='text']'.</msg>
+<msg time="2025-08-20T15:41:04.061045" level="INFO">Typing text '19362729032' into text field '//input[@type='text']'.</msg>
 <arg>${INPUTA_CPF}</arg>
 <arg>19362729032</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:46.796904" elapsed="0.089193"/>
+<status status="PASS" start="2025-08-20T15:41:04.060584" elapsed="0.077742"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:46.886763" level="INFO">Clicking button '//button[contains(.,' ENVIAR ')]'.</msg>
+<msg time="2025-08-20T15:41:04.139028" level="INFO">Clicking button '//button[contains(.,' ENVIAR ')]'.</msg>
 <arg>${ENVIAR_CPF}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:46.886443" elapsed="0.070673"/>
+<status status="PASS" start="2025-08-20T15:41:04.138623" elapsed="0.062955"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:49.957696" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-08-20T15:41:07.202465" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:46.957389" elapsed="3.000869"/>
+<status status="PASS" start="2025-08-20T15:41:04.201863" elapsed="3.000913"/>
 </kw>
-<status status="PASS" start="2025-08-19T20:18:45.750514" elapsed="4.208026"/>
+<status status="PASS" start="2025-08-20T15:41:03.011846" elapsed="4.191143"/>
 </kw>
 <kw name="E escolho simular pela fipe" owner="simula_credito_cpf">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:49.960307" level="INFO">Clicking element '//span[contains(.,' SIMULAR PELA FIPE ')]'.</msg>
+<msg time="2025-08-20T15:41:07.204677" level="INFO">Clicking element '//span[contains(.,' SIMULAR PELA FIPE ')]'.</msg>
 <arg>${SIMULA_FIPE}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:49.959991" elapsed="0.041693"/>
+<status status="PASS" start="2025-08-20T15:41:07.204375" elapsed="0.041148"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:52.002436" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-08-20T15:41:09.246651" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:50.001966" elapsed="2.000931"/>
+<status status="PASS" start="2025-08-20T15:41:07.245824" elapsed="2.001361"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:52.003656" level="INFO">Clicking element '//button[contains(.,' ENVIAR ')]'.</msg>
+<msg time="2025-08-20T15:41:09.248009" level="INFO">Clicking element '//button[contains(.,' ENVIAR ')]'.</msg>
 <arg>${ENVIAR_CPF}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:52.003277" elapsed="0.037820"/>
+<status status="PASS" start="2025-08-20T15:41:09.247577" elapsed="0.039028"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:55.042323" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-08-20T15:41:12.287846" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:52.041394" elapsed="3.001629"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:55.043839" level="INFO">Typing text 'Fiat' into text field 'xpath=//div[label[contains(text(),'Marca')]]//input'.</msg>
-<arg>${MARCA}</arg>
-<arg>Fiat</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:55.043448" elapsed="0.076522"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-08-19T20:18:58.120957" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-08-19T20:18:55.120567" elapsed="3.000679"/>
+<status status="PASS" start="2025-08-20T15:41:09.286965" elapsed="3.001346"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:58.121967" level="INFO">Clicking element '//div[contains(@class,'v-navigation-drawer__content')]'.</msg>
-<arg>//div[contains(@class,'v-navigation-drawer__content')]</arg>
+<msg time="2025-08-20T15:41:12.289154" level="INFO">Clicking element 'xpath=//div[label[contains(text(),'Marca')]]//input'.</msg>
+<arg>${MARCA}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-08-19T20:18:58.121600" elapsed="0.046856"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-08-19T20:18:58.169304" level="INFO">Typing text 'ARGO 1.0 6V Flex' into text field 'xpath=//div[label[contains(text(),'Modelo')]]//input'.</msg>
-<msg time="2025-08-19T20:18:58.346862" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-08-19T20:18:58.347421" level="FAIL">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=139.0.7258.128)
-Stacktrace:
-	GetHandleVerifier [0x0x42fd23+62915]
-	GetHandleVerifier [0x0x42fd64+62980]
-	(No symbol) [0x0x263e13]
-	(No symbol) [0x0x26a619]
-	(No symbol) [0x0x26c94a]
-	(No symbol) [0x0x26c9c7]
-	(No symbol) [0x0x2a47f6]
-	(No symbol) [0x0x2d13dc]
-	(No symbol) [0x0x2a1ff4]
-	(No symbol) [0x0x2d1654]
-	(No symbol) [0x0x2f26ea]
-	(No symbol) [0x0x2d11d6]
-	(No symbol) [0x0x2a0833]
-	(No symbol) [0x0x2a16a4]
-	GetHandleVerifier [0x0x698d13+2590131]
-	GetHandleVerifier [0x0x693f5a+2570234]
-	GetHandleVerifier [0x0x4559da+217722]
-	GetHandleVerifier [0x0x446048+153832]
-	GetHandleVerifier [0x0x44c4ad+179533]
-	GetHandleVerifier [0x0x437728+94152]
-	GetHandleVerifier [0x0x4378b2+94546]
-	GetHandleVerifier [0x0x422bca+9322]
-	BaseThreadInitThunk [0x0x76055d49+25]
-	RtlInitializeExceptionChain [0x0x7746d2fb+107]
-	RtlGetAppContainerNamedObjectPath [0x0x7746d281+561]
-</msg>
-<arg>${MODELO}</arg>
-<arg>ARGO 1.0 6V Flex</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2025-08-19T20:18:58.168883" elapsed="0.183635">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=139.0.7258.128)
-Stacktrace:
-	GetHandleVerifier [0x0x42fd23+62915]
-	GetHandleVerifier [0x0x42fd64+62980]
-	(No symbol) [0x0x263e13]
-	(No symbol) [0x0x26a619]
-	(No symbol) [0x0x26c94a]
-	(No symbol) [0x0x26c9c7]
-	(No symbol) [0x0x2a47f6]
-	(No symbol) [0x0x2d13dc]
-	(No symbol) [0x0x2a1ff4]
-	(No symbol) [0x0x2d1654]
-	(No symbol) [0x0x2f26ea]
-	(No symbol) [0x0x2d11d6]
-	(No symbol) [0x0x2a0833]
-	(No symbol) [0x0x2a16a4]
-	GetHandleVerifier [0x0x698d13+2590131]
-	GetHandleVerifier [0x0x693f5a+2570234]
-	GetHandleVerifier [0x0x4559da+217722]
-	GetHandleVerifier [0x0x446048+153832]
-	GetHandleVerifier [0x0x44c4ad+179533]
-	GetHandleVerifier [0x0x437728+94152]
-	GetHandleVerifier [0x0x4378b2+94546]
-	GetHandleVerifier [0x0x422bca+9322]
-	BaseThreadInitThunk [0x0x76055d49+25]
-	RtlInitializeExceptionChain [0x0x7746d2fb+107]
-	RtlGetAppContainerNamedObjectPath [0x0x7746d281+561]
-</status>
+<status status="PASS" start="2025-08-20T15:41:12.288718" elapsed="0.058867"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:13.349189" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:12.348271" elapsed="1.001381"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:13.350266" level="INFO">Clicking element 'xpath=//div[contains(@class,'v-menu')]//div[contains(.,'Fiat')]'.</msg>
+<arg>${FIAT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:13.349992" elapsed="0.049086"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:14.400324" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:13.399361" elapsed="1.001406"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:14.401350" level="INFO">Clicking element 'xpath=//div[label[contains(text(),'Modelo')]]//input'.</msg>
+<arg>${MODELO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:14.401075" elapsed="0.053820"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:15.455978" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:14.455245" elapsed="1.001163"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:15.457155" level="INFO">Clicking element 'xpath=//div[contains(@class,'v-menu')]//div[contains(.,'ARGO 1.0 6V Flex')]'.</msg>
+<arg>${ARGO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:15.456709" elapsed="0.048031"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:16.506138" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:15.505200" elapsed="1.001415"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:16.507412" level="INFO">Clicking element 'xpath=//div[label[contains(text(),'Ano')]]//input'.</msg>
+<arg>${ANO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:16.506999" elapsed="0.054547"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:17.563005" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:16.561833" elapsed="1.001743"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:17.564386" level="INFO">Clicking element 'xpath=//div[contains(@class,'v-menu')]//div[contains(.,'2019')]'.</msg>
+<arg>${2019}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:17.564054" elapsed="0.047102"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:18.612316" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:17.611445" elapsed="1.001494"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:18.613530" level="INFO">Clicking element '//button[contains(.,' ENVIAR ')]'.</msg>
+<arg>${ENVIAR_CPF}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:18.613259" elapsed="0.047419"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:23.661775" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:18.661072" elapsed="5.001097"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:23.662742" level="INFO">Clicking element '//span[contains(.,' VER SIMULAÇÃO ')]'.</msg>
+<arg>${VER_SIMULACAO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:23.662416" elapsed="0.043770"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:26.707238" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2025-08-19T20:18:58.353005" elapsed="0.000145"/>
+<status status="PASS" start="2025-08-20T15:41:23.706558" elapsed="3.001092"/>
 </kw>
-<status status="FAIL" start="2025-08-19T20:18:49.959545" elapsed="8.393865">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=139.0.7258.128)
-Stacktrace:
-	GetHandleVerifier [0x0x42fd23+62915]
-	GetHandleVerifier [0x0x42fd64+62980]
-	(No symbol) [0x0x263e13]
-	(No symbol) [0x0x26a619]
-	(No symbol) [0x0x26c94a]
-	(No symbol) [0x0x26c9c7]
-	(No symbol) [0x0x2a47f6]
-	(No symbol) [0x0x2d13dc]
-	(No symbol) [0x0x2a1ff4]
-	(No symbol) [0x0x2d1654]
-	(No symbol) [0x0x2f26ea]
-	(No symbol) [0x0x2d11d6]
-	(No symbol) [0x0x2a0833]
-	(No symbol) [0x0x2a16a4]
-	GetHandleVerifier [0x0x698d13+2590131]
-	GetHandleVerifier [0x0x693f5a+2570234]
-	GetHandleVerifier [0x0x4559da+217722]
-	GetHandleVerifier [0x0x446048+153832]
-	GetHandleVerifier [0x0x44c4ad+179533]
-	GetHandleVerifier [0x0x437728+94152]
-	GetHandleVerifier [0x0x4378b2+94546]
-	GetHandleVerifier [0x0x422bca+9322]
-	BaseThreadInitThunk [0x0x76055d49+25]
-	RtlInitializeExceptionChain [0x0x7746d2fb+107]
-	RtlGetAppContainerNamedObjectPath [0x0x7746d281+561]
-</status>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:26.708412" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-08-20T15:41:26.707941" elapsed="0.004652"/>
 </kw>
-<status status="FAIL" start="2025-08-19T20:18:26.975004" elapsed="31.378932">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
-  (Session info: chrome=139.0.7258.128)
-Stacktrace:
-	GetHandleVerifier [0x0x42fd23+62915]
-	GetHandleVerifier [0x0x42fd64+62980]
-	(No symbol) [0x0x263e13]
-	(No symbol) [0x0x26a619]
-	(No symbol) [0x0x26c94a]
-	(No symbol) [0x0x26c9c7]
-	(No symbol) [0x0x2a47f6]
-	(No symbol) [0x0x2d13dc]
-	(No symbol) [0x0x2a1ff4]
-	(No symbol) [0x0x2d1654]
-	(No symbol) [0x0x2f26ea]
-	(No symbol) [0x0x2d11d6]
-	(No symbol) [0x0x2a0833]
-	(No symbol) [0x0x2a16a4]
-	GetHandleVerifier [0x0x698d13+2590131]
-	GetHandleVerifier [0x0x693f5a+2570234]
-	GetHandleVerifier [0x0x4559da+217722]
-	GetHandleVerifier [0x0x446048+153832]
-	GetHandleVerifier [0x0x44c4ad+179533]
-	GetHandleVerifier [0x0x437728+94152]
-	GetHandleVerifier [0x0x4378b2+94546]
-	GetHandleVerifier [0x0x422bca+9322]
-	BaseThreadInitThunk [0x0x76055d49+25]
-	RtlInitializeExceptionChain [0x0x7746d2fb+107]
-	RtlGetAppContainerNamedObjectPath [0x0x7746d281+561]
-</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:31.713202" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:26.712867" elapsed="5.000821"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:31.714620" level="INFO">Clicking element '//span[contains(.,' CONTINUAR PARA CONTRATAÇÃO ')]'.</msg>
+<arg>${CONTINUAR_CONTRATACAO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:31.714125" elapsed="0.055094"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:34.770405" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:31.769529" elapsed="3.001475"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:34.771611" level="INFO">Clicking element 'xpath=(//input[contains(@type,'text')])[1]'.</msg>
+<arg>${ANO_FABRICACAO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:34.771249" elapsed="0.044790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:34.816891" level="INFO">Typing text '2019' into text field 'xpath=(//input[contains(@type,'text')])[1]'.</msg>
+<arg>${ANO_FABRICACAO}</arg>
+<arg>2019</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:34.816466" elapsed="0.058651"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-08-20T15:41:35.875721" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-08-20T15:41:34.875412" elapsed="1.000635"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:35.876596" level="INFO">Typing text 'Vermelho' into text field 'xpath=(//input[contains(@type,'text')])[2]'.</msg>
+<arg>${COR}</arg>
+<arg>Vermelho</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:35.876298" elapsed="0.087866"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${CONINUAR_ETAPA_COR}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-08-20T15:41:35.964575" elapsed="0.292788"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-08-20T15:41:36.257951" level="INFO">Clicking element '//button[contains(.,' CONTINUAR ')]'.</msg>
+<arg>${CONINUAR_ETAPA_COR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-08-20T15:41:36.257666" elapsed="0.085848"/>
+</kw>
+<status status="PASS" start="2025-08-20T15:41:07.203980" elapsed="29.140086"/>
+</kw>
+<status status="PASS" start="2025-08-20T15:40:43.904531" elapsed="52.440257"/>
 </test>
-<status status="FAIL" start="2025-08-19T20:18:26.510072" elapsed="31.845534"/>
+<status status="PASS" start="2025-08-20T15:40:43.438705" elapsed="52.907647"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test Simula Credito Cpf" id="s1" pass="0" fail="1" skip="0">Test Simula Credito Cpf</stat>
+<stat name="Test Simula Credito Cpf" id="s1" pass="1" fail="0" skip="0">Test Simula Credito Cpf</stat>
 </suite>
 </statistics>
 <errors>

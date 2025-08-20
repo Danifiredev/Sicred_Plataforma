@@ -14,9 +14,15 @@ ${INPUTA_CPF}                          //input[@type='text']
 ${ENVIAR_CPF}                         //button[contains(.,' ENVIAR ')]
 ${SIMULA_FIPE}                       //span[contains(.,' SIMULAR PELA FIPE ')]
 ${MARCA}                            xpath=//div[label[contains(text(),'Marca')]]//input
-${MODELO}                           xpath=//div[label[contains(text(),'Modelo')]]//input
-
-
+${FIAT}                            xpath=//div[contains(@class,'v-menu')]//div[contains(.,'Fiat')]
+${MODELO}                        xpath=//div[label[contains(text(),'Modelo')]]//input
+${ARGO}                         xpath=//div[contains(@class,'v-menu')]//div[contains(.,'ARGO 1.0 6V Flex')]
+${ANO}                          xpath=//div[label[contains(text(),'Ano')]]//input
+${2019}                         xpath=//div[contains(@class,'v-menu')]//div[contains(.,'2019')]
+${VER_SIMULACAO}                //span[contains(.,' VER SIMULAÇÃO ')]
+${ANO_FABRICACAO}                xpath=(//input[contains(@type,'text')])[1]
+${COR}                           xpath=(//input[contains(@type,'text')])[2]
+${CONINUAR_ETAPA_COR}            //button[contains(.,' CONTINUAR ')]
 
 
 

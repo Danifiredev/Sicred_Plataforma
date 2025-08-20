@@ -12,20 +12,36 @@ E crio uma nova simulacao de credito para um cliente cpf
     Sleep    3s
 
 E escolho simular pela fipe
-    Click Element            ${SIMULA_FIPE}
+    Click Element    ${SIMULA_FIPE}   
     Sleep    2s
-    Click Element            ${ENVIAR_CPF} 
+    Click Element    ${ENVIAR_CPF} 
     Sleep    3s  
-    Input Text               ${MARCA}    Fiat
+    Click Element    ${MARCA}
+    Sleep    1s
+    Click Element    ${FIAT}
+    Sleep    1s
+    Click Element    ${MODELO}
+    Sleep    1s
+    Click Element    ${ARGO} 
+    Sleep    1s
+    Click Element    ${ANO}
+    Sleep    1s
+    Click Element    ${2019}
+    Sleep    1s
+    Click Element    ${ENVIAR_CPF}
+    Sleep    5s
+    Click Element    ${VER_SIMULACAO}
     Sleep    3s
-    
-    #PAREI AQUI#
-    
-
-    Click Element               //div[contains(@class,'v-navigation-drawer__content')]
-    Input Text               ${MODELO}    ARGO 1.0 6V Flex
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight)
+    Sleep    5s
+    Click Element    ${CONTINUAR_CONTRATACAO} 
     Sleep    3s
-     
+    Click Element    ${ANO_FABRICACAO}
+    Input Text    ${ANO_FABRICACAO}    2019
+    Sleep    1s
+    Input Text    ${COR}    Vermelho
+    Scroll Element Into View     ${CONINUAR_ETAPA_COR}
+    Click Element                 ${CONINUAR_ETAPA_COR}
 
 E escolho simular pela placa do veiculo
     Click Element    ${SIMULA_PLACA}
