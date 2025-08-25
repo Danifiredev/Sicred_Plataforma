@@ -39,9 +39,47 @@ E escolho simular pela fipe
     Click Element    ${ANO_FABRICACAO}
     Input Text    ${ANO_FABRICACAO}    2019
     Sleep    1s
-    Input Text    ${COR}    Vermelho
+    Input Text    ${COR}    Azul
+    Sleep    1s
+    Input Text    ${CHASSI}    9C2JC4130BR100747
+    Sleep    1s
+    Input Text    ${PLACA}     PFA4700
+    Sleep    2s
+    Click Element    ${RENAVAM}
+    Press Keys       ${RENAVAM}    27351469511
+    Sleep    2s
     Scroll Element Into View     ${CONINUAR_ETAPA_COR}
-    Click Element                 ${CONINUAR_ETAPA_COR}
+    Click Element            ${CONINUAR_ETAPA_COR}
+    Sleep    2s
+    Wait Until Element Is Visible    ${ALERTA_VEICULO_NOVO}    timeout=10s
+    Click Element                    ${ALERTA_VEICULO_NOVO}
+    sleep     10s
+    Scroll Element Into View    ${CONFIRMAR_DADOS_CONTRATACAO}
+    Click Element    ${CONFIRMAR_DADOS_CONTRATACAO}
+    Sleep    3s
+    Reload Page
+    Sleep    2s    
+    Click Element    ${PULAR_CAF} 
+    Sleep    20s
+    
+    ## VERIFICAR ESSE CLICK QUE ESTÁ LEVANDO PRA UMA PÁGINA NADA A VER!!##
+    #VERIFICAR AMANHÃ 21/02/25##
+    #Click Element    ${CONFIRMAR_DADOS_CONTRATACAO}
+    ##Sleep    10s
+
+    
+    Click Element    ${ENVIO_DOCUMENTOS}
+    Sleep    3s
+    Click Element    ${UPLOAD_QRCODE}
+    Choose File    ${UPLOAD_QRCODE}    ${CURDIR}/testes/simula_credito/operacao.txt
+
+
+
+
+
+
+
+
 
 E escolho simular pela placa do veiculo
     Click Element    ${SIMULA_PLACA}

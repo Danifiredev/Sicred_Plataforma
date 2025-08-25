@@ -15,7 +15,7 @@ Dado que eu acesse a Sicred Plataforma Parceiro
     Execute Javascript  window.resizeTo(window.innerWidth * 0.1, window.innerHeight * 0.1)
     Execute JavaScript  window.localStorage.clear();
     Execute JavaScript  window.sessionStorage.clear();
-
+    
 Dado que estou logado no sistema
     SeleniumLibrary.Open Browser      https://plataforma.dev.sicredipioneira.com.br/parceiro       browser=Chrome
     Maximize Browser Window

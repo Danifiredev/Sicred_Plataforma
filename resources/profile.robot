@@ -23,9 +23,16 @@ ${VER_SIMULACAO}                //span[contains(.,' VER SIMULAÇÃO ')]
 ${ANO_FABRICACAO}                xpath=(//input[contains(@type,'text')])[1]
 ${COR}                           xpath=(//input[contains(@type,'text')])[2]
 ${CONINUAR_ETAPA_COR}            //button[contains(.,' CONTINUAR ')]
+${CHASSI}                           //input[@maxlength='17']
+${PLACA}                           xpath=//label[contains(text(),'Placa')]/following-sibling::input
+${RENAVAM}                         //*[@id="app"]/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[2]/div/div[2]/div[4]/div[1]/div/div[1]
+${ALERTA_VEICULO_NOVO}            xpath=//span[contains(.,' Está correto ')]
+${UPLOAD_QRCODE}                    //center[contains(.,'Formato permitido: JPG, PDF e PNG')]
+${ENVIO_DOCUMENTOS}                xpath=//strong[contains(normalize-space(.),'Envio de Documentos')]
+
 
 
 
 ###################################### Variaveis Validacao CNH###################################################################
 ${VALIDA_CNH}                      //strong[contains(.,' Validação da CNH ')]
-${PULAR_CAF}                      //span[contains(.,' PULAR CAF ')]
+${PULAR_CAF}                      xpath=//span[normalize-space(text())='PULAR CAF']
