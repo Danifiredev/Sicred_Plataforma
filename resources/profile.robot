@@ -27,8 +27,12 @@ ${CHASSI}                           //input[@maxlength='17']
 ${PLACA}                           xpath=//label[contains(text(),'Placa')]/following-sibling::input
 ${RENAVAM}                         //*[@id="app"]/div[1]/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[2]/div/div[2]/div[4]/div[1]/div/div[1]
 ${ALERTA_VEICULO_NOVO}            xpath=//span[contains(.,' Está correto ')]
-${UPLOAD_QRCODE}                    //center[contains(.,'Formato permitido: JPG, PDF e PNG')]
 ${ENVIO_DOCUMENTOS}                xpath=//strong[contains(normalize-space(.),'Envio de Documentos')]
+${UPLOAD_QRCODE}                    //center[contains(.,'Formato permitido: JPG, PDF e PNG')]
+${UPLOAD_CLRV}                      /html/body/div/div/div[2]/div[2]/div[2]/div[4]/div[5]/div/div[3]/div[2]/div/button/span/div/div[2]/h3/h3
+${SOLICITA_PGTO}                        //button[contains(.,' SOLICITAR PAGAMENTO ')]
+${HISTORICO}                        xpath=//div[contains(.,'Histórico')]
+${ASSINATURA_CONTRATO}               xpath=//strong[contains(.,'Assinatura de Contrato')]
 
 
 

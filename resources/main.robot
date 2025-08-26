@@ -7,8 +7,12 @@ Library      XML
 Library      OperatingSystem
 Library      BuiltIn 
 Library      Screenshot
+Library      String
+Library      IMAPLibrary
+Library      RequestsLibrary 
 Resource     ./shared/setup_teardown.robot
 Resource     ./shared/login_sicred_plataforma.robot
+
 
 
    

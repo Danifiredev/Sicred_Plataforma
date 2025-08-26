@@ -3,6 +3,7 @@ Resource    ../../main.robot
 Resource    ../../profile.robot
 
 
+
 *** Keywords ***
 E crio uma nova simulacao de credito para um cliente cpf
     Click Element   ${BOTAO_NOVA_SIMULACAO}
@@ -56,28 +57,32 @@ E escolho simular pela fipe
     sleep     10s
     Scroll Element Into View    ${CONFIRMAR_DADOS_CONTRATACAO}
     Click Element    ${CONFIRMAR_DADOS_CONTRATACAO}
-    Sleep    3s
-    Reload Page
     Sleep    2s    
     Click Element    ${PULAR_CAF} 
-    Sleep    20s
-    
-    ## VERIFICAR ESSE CLICK QUE ESTÁ LEVANDO PRA UMA PÁGINA NADA A VER!!##
-    #VERIFICAR AMANHÃ 21/02/25##
-    #Click Element    ${CONFIRMAR_DADOS_CONTRATACAO}
-    ##Sleep    10s
-
-    
+    Sleep    35s
     Click Element    ${ENVIO_DOCUMENTOS}
     Sleep    3s
-    Click Element    ${UPLOAD_QRCODE}
-    Choose File    ${UPLOAD_QRCODE}    ${CURDIR}/testes/simula_credito/operacao.txt
-
-
-
-
-
-
+    Choose File    xpath=//input[@type='file']        ${CURDIR}\\qr_code.png
+    Choose File    xpath=//h3[contains(.,'QR Code para anexar')]/following::input[@type='file'][1]    ${CURDIR}\\qr_code.png
+    Sleep    2s
+    Choose File    xpath=//h3[contains(.,'CRLV para anexar')]/following::input[@type='file'][1]    ${CURDIR}\\qr_code.png
+    Sleep    2s
+    Choose File    xpath=//h3[contains(.,'Foto do Veículo para anexar')]/following::input[@type='file'][1]    ${CURDIR}\\qr_code.png
+    #Reload Page
+    Sleep    3s
+    Click Element    ${HISTORICO}
+    Execute Javascript    window.scrollTo(0, document.body.scrollHeight) 
+    Sleep  2s
+    Execute Javascript    window.scrollTo(0, 0)
+    Sleep    2s
+    Click Element    ${ASSINATURA_CONTRATO}
+    Sleep    2s
+    Click Element    ${ENVIO_DOCUMENTOS}
+    Execute Javascript    window.scrollTo(0, 0)
+    
+    
+    Click Element    ${SOLICITA_PGTO} 
+    Sleep    10s
 
 
 
