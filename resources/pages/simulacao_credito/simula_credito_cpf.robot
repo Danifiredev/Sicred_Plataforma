@@ -11,6 +11,9 @@ E crio uma nova simulacao de credito para um cliente cpf
     Input Text      ${INPUTA_CPF}      19362729032
     Click Button    ${ENVIAR_CPF}
     Sleep    3s
+    
+  
+
 
 E escolho simular pela fipe
     Click Element    ${SIMULA_FIPE}   
@@ -80,9 +83,6 @@ E escolho simular pela fipe
     Click Element    ${ENVIO_DOCUMENTOS}
     Execute Javascript    window.scrollTo(0, 0)
     
-    
-    Click Element    ${SOLICITA_PGTO} 
-    Sleep    10s
 
 
 
